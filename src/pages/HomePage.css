@@ -1,0 +1,16 @@
+/* Variables */
+:root{
+    --page-content-load-time: 0.5s;
+    --page-content-role-load-time: 1s;
+}
+
+
+/* Keyframes */
+@keyframes page-content-load{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

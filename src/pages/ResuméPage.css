@@ -1,0 +1,36 @@
+/* Variables */
+:root {
+    --section-transition-time: 0.25s;
+    --profile-section-delay: 0s;
+    --abilities-section-delay: 0.25s;
+    --experience-section-delay: 0.5s;
+    --contact-section-delay: 0.75s;
+
+    --section-navbar-transition-time: 0.4s;
+    --section-navbar-delay: var(--profile-section-delay);
+}
+
+/* Keyframes */
+@keyframes section-load {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes section-navbar-load {
+    0% {
+        opacity: 1;
+        transform: translateY(-150%);
+    }
+    90% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
